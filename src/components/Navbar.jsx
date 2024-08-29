@@ -1,31 +1,21 @@
-import { useState } from "react";
-import Home from "./Home";
-import Create from "./Create";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
-const Navbar = () =>{
+const Navbar = () => {
+    return (
+        <div className="nav">
 
-    const [currentView, setCurrentView] = useState("Home");
+            <div className="logo">
+                <Link id="logo-h1" to="/"><h1>Blog Post</h1> </Link>
+            </div>
 
-    return(
-     <div>
-        <nav className="Navbar">
+            <div className="nav-links">
+                <Link id='links' to="/">Home</Link>
+                <Link id='links' to="/Create">Create</Link>
+                <Link id='links' to="/Contact">Contact Us</Link>
+            </div>
 
-                <h2>Blog Post</h2>
-            
-            <div className="Links">
-            <ul>
-                <li><a href="#" onClick={() => setCurrentView ("Home")}>Home</a></li>
-                <li><a href="#" onClick={()=> setCurrentView("Create")}>Create</a></li>
-            </ul>
-             </div>
-                 
-        </nav>
-        <div>
-             {currentView === "Home" && <Home/>}
-             {currentView === "Create" && <Create/>}
         </div>
-        </div>
-   
     );
 }
-export default Navbar;
+
+export default Navbar
