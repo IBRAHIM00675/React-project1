@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Navbar />
       
-        <div class="content">
+        <div className="content">
         <Switch>
           
           {/* <Form /> */}
