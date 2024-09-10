@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Home from './components/Home';
+import BlogDetails from './components/BlogDetails';
 // import Contact from './components/Contacts';
 
 function App() {
@@ -27,9 +28,13 @@ function App() {
           </Route>
               
           {/* <Route exact path="/Contact">
-            <Contact />
+            <Contact/>
           </Route> */}
-            
+
+          <Route path="/Blog-details/:id">
+          <BlogDetails />
+          </Route>
+    
         </Switch>
         </div>
       
