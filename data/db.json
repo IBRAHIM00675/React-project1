@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "title": "Web development",
-      "author": "Ibrahim Musa",
-      "body": "A web developer's job is to create websites.",
-      "id": "75"
-    },
-    {
       "id": "d106",
       "title": "Software Developer",
       "author": "Miharbi",
@@ -16,6 +10,12 @@
       "id": "2f2f",
       "title": "Full Stack Developer",
       "author": "IBRAHIM",
+      "body": ""
+    },
+    {
+      "id": "a3e0",
+      "title": "database",
+      "author": "Brayan ",
       "body": ""
     }
   ]
